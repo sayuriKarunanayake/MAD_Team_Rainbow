@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">MAD project</string>
+    <string name="hello">Hello!</string>
+    <string name="display_msg">Find Your Favourite Books with Us</string>
+    <string name="new_arr_text">New Arrivals</string>
+    <string name="contrast_ration">3</string>
+    <string name="activitybook_desc">"Spot The Difference  :   Fun Activity Books for Kids "</string>
+    <string name="shadybaby_descp">"Inspired by fan favourite Author, Kaavia James "</string>
+    <string name="homelogo">logo</string>
+    <string name="actbook">activity_book</string>
+    <string name="shaddybookdesc">shaddybook</string>
+    <string name="contrantration">3</string>
+    <string name="cart_heading">Your Cart</string>
+    <string name="cart_item_descrip">Price: Rs.400/=</string>
+    <string name="item1qty">Qty.</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="subtot_hint">Rs.xxx.xx </string>
+    <string name="addoffers_title" />
+    <string name="add_offers_heading">Add Offer Items</string>
+    <string name="offers_heading">Special Offers</string>
+    <string name="offer_bookname">Book name</string>
+    <string name="bookcode">ISBN</string>
+    <string name="offerprice">Offer price</string>
+    <string name="offer_descript">Offer description</string>
+    <string name="offer_code">ISBN</string>
+    <string name="addoffers_heading">Add Offer Item</string>
+    <string name="editoffers_heading">Edit Offers</string>
+    <string name="tv_offermicky">2 Micky Mouse Colouring Books</string>
+    <string name="harrypotter_offer">Harry Potter Book Series</string>
+    <string name="edit_offers" />
+    <string name="orderdetail_heading">Order Details</string>
+    <string name="date">Order For</string>
+    <string name="dateorder">xx/xx/xxxx</string>
+    <string name="namebuyer">Full Name</string>
+    <string name="phoneNo">Phone NO.</string>
+    <string name="emailbuyer">Email</string>
+    <string name="fullname"></string>
+    <string name="phone" />
+    <string name="buyeremail" />
+    <string name="cartitem2">Price: Rs.700</string>
+    <string name="subtot">Rs.xxx.xx</string>
+    <string name="title_activity_more_dreawer">more_dreawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>
