@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "471430853173",
+    "project_id": "rainbow-bookstore",
+    "storage_bucket": "rainbow-bookstore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471430853173:android:15401d14cabc67f856777c",
+        "android_client_info": {
+          "package_name": "com.example.madproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471430853173-tra25t3t8c2a3adleu6clbtd57mlc804.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuOkzmHbd-U6E_b1yZ_MY2UQz-YBEuqTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471430853173-tra25t3t8c2a3adleu6clbtd57mlc804.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
