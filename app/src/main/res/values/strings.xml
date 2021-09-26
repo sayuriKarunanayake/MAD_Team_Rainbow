@@ -51,4 +51,9 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="iconuser">TODO</string>
+    <string name="offer_despt_tv">Until 30th</string>
+    <string name="isbn">ISBN :</string>
+    <string name="isbn_offer_tv">1234</string>
+    <string name="booktitle_offer_tv">Oliver Twist</string>
+    <string name="offer_price_tv">RS.500</string>
 </resources>

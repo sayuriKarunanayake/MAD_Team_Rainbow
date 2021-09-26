@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.slideshow.offers">
+    tools:context=".offers">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar7"
@@ -74,165 +74,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar7" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="367dp"
-        android:layout_height="204dp"
-        android:layout_marginTop="24dp"
-        android:foregroundGravity="right"
-        app:cardElevation="3dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="406dp"
+        android:layout_height="565dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/offer_heading">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="160dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/colorbookoffer" />
-
-        <RelativeLayout
-            android:layout_width="177dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="right">
-
-            <TextView
-                android:id="@+id/tv_mickybooks"
-                android:layout_width="wrap_content"
-                android:layout_height="61dp"
-                android:text="@string/tv_offermicky"
-                android:textAlignment="gravity"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="165dp"
-                android:layout_height="74dp"
-                android:layout_below="@+id/tv_mickybooks"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="56dp"
-                android:text="Only for Rs.200/="
-                android:textAlignment="gravity"
-                android:textColor="@color/design_default_color_error"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="175dp"
-                android:layout_height="33dp"
-                android:layout_below="@+id/tv_mickybooks"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="53dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="57dp"
-                android:text="Limited offer"
-                android:textAlignment="gravity"
-                android:textColor="@color/design_default_color_error"
-                android:textSize="20sp" />
-
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="64dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="87dp"
-                android:layout_marginEnd="26dp"
-                android:layout_marginBottom="4dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="363dp"
-        android:layout_height="204dp"
-        android:layout_marginTop="32dp"
-        app:cardElevation="3dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="174dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/offersharrypotter" />
-
-        <RelativeLayout
-            android:layout_width="176dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="right">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_below="@+id/tv_mickybooks"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginEnd="-1dp"
-                android:layout_marginBottom="62dp"
-                android:text="Offer valid until 30th August"
-                android:textAlignment="gravity"
-                android:textColor="@color/design_default_color_error"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="173dp"
-                android:layout_height="33dp"
-                android:layout_below="@+id/tv_mickybooks"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginEnd="3dp"
-                android:layout_marginBottom="120dp"
-                android:text="Only for Rs.4000/="
-                android:textAlignment="gravity"
-                android:textColor="@color/design_default_color_error"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/harrypotter_offer"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="@string/harrypotter_offer"
-                android:textSize="20sp" />
-
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="64dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="85dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginBottom="8dp"
-                app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintTop_toBottomOf="@+id/offer_heading" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
