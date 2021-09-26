@@ -8,6 +8,7 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -20,8 +21,11 @@ import com.example.madproject.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -38,6 +42,8 @@ public class add_offers extends AppCompatActivity {
     EditText et_bookname_offer,offer_isbn,et_offerprice,et_offerdescript;
     Data data;
     DatabaseReference dbref;
+
+    long maxid=0;
 
 
     @Override
@@ -75,43 +81,70 @@ public class add_offers extends AppCompatActivity {
             }
         });
     }
+    //method to clear all user inputs after button clicking
+    public void ClearControls(){
+        offer_isbn.setText("");
+        et_bookname_offer.setText("");
+        et_offerprice.setText("");
+        et_offerdescript.setText("");
+    }
+
     private String getExtension(Uri uri){
         ContentResolver cr = getContentResolver();
         MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
         return mimeTypeMap.getExtensionFromMimeType(cr.getType(uri));
     }
-
-    private void Fileuploader(){
+    private void Fileuploader() {
         String imageid;
-        imageid = System.currentTimeMillis()+"."+getExtension(imageuri);
-
-        //set data
-        data.setBookname(et_bookname_offer.getText().toString().trim());
-        data.setIsbn(offer_isbn.getText().toString().trim());
-        data.setOfferprice(et_offerprice.getText().toString().trim());
-        data.setOfferdescpt(et_offerdescript.getText().toString().trim());
-        data.setImageid(imageid);
-
-        dbref.push().setValue(data);
-
-        StorageReference ref = imgdb.child(imageid);
-        ref.putFile(imageuri).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
+        dbref.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
-                ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                    @Override
-                    public void onSuccess(Uri uri) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists())
+                    maxid = (dataSnapshot.getChildrenCount());
+            }
 
-                        Toast.makeText(getApplicationContext(), "Data uploaded successfully!", Toast.LENGTH_SHORT).show();
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        try {
+            //check whether fields are empty
+            if (TextUtils.isEmpty(et_bookname_offer.getText().toString()))
+                Toast.makeText(getApplicationContext(), "Please enter book title", Toast.LENGTH_SHORT).show();
+            else if (TextUtils.isEmpty(offer_isbn.getText().toString()))
+                Toast.makeText(getApplicationContext(), "Please enter ISBN number of book", Toast.LENGTH_SHORT).show();
+            else if (TextUtils.isEmpty(et_offerprice.getText().toString()))
+                Toast.makeText(getApplicationContext(), "Please enter offer price", Toast.LENGTH_SHORT).show();
+            else if (TextUtils.isEmpty(et_offerdescript.getText().toString()))
+                Toast.makeText(getApplicationContext(), "Please enter a offer description", Toast.LENGTH_SHORT).show();
+            else{
+                imageid = System.currentTimeMillis()+"."+getExtension(imageuri);
+                //set data
+                data.setBookname(et_bookname_offer.getText().toString().trim());
+                data.setIsbn(offer_isbn.getText().toString().trim());
+                data.setOfferprice(et_offerprice.getText().toString().trim());
+                data.setOfferdescpt(et_offerdescript.getText().toString().trim());
+                data.setImageid(imageid);
+                dbref.child(String.valueOf(maxid+1)).setValue(data);
+                StorageReference ref = imgdb.child(imageid);
+                ref.putFile(imageuri).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+                        ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                            @Override
+                            public void onSuccess(Uri uri) {
+                                Toast.makeText(getApplicationContext(), "Data saved successfully!", Toast.LENGTH_SHORT).show();
+                                ClearControls();
+                            }
+                        });
                     }
                 });
             }
-
-        });
-
+        }
+        catch(NumberFormatException e){ }
     }
-
-
     private void Filechooser(){
         Intent intent = new Intent();
         intent.setType("image/");
