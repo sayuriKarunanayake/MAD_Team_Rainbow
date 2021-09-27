@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/booktitle_offer_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="31dp"
+            android:layout_toRightOf="@id/image1"
+            android:text="Name of book"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/offer_price_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/booktitle_offer_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/image1"
+            android:text="Rs."
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/offer_descript_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/offer_price_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/image1"
+            android:text="description about offer"
+            android:textColor="#F44336"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/isbn_offer_text"
+            android:layout_width="284dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="0dp"
+            android:text="1234"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="381dp"
+            android:layout_height="57dp"
+            android:layout_below="@+id/offer_descript_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp">
+
+            <Button
+                android:id="@+id/editoffers_btn"
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:text="Edit"
+                app:backgroundTint="#00BCD4" />
+
+            <Button
+                android:id="@+id/deleteoffers_btn"
+                android:layout_width="122dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:baselineAligned="false"
+                android:foregroundGravity="right"
+                android:text="delete"
+                app:backgroundTint="#F44336" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

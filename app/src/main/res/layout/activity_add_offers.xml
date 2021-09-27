@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_offers">
+
+    <TextView
+        android:id="@+id/addoffers_heading"
+        android:layout_width="282dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/addoffers_heading"
+        android:textAlignment="center"
+        android:textColor="@color/theme_color"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="413dp"
+        android:layout_height="62dp"
+        android:background="#F6BBFA"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/usericon"
+        android:layout_width="37dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
+        app:layout_constraintStart_toStartOf="@+id/toolbar4"
+        app:layout_constraintTop_toTopOf="@+id/toolbar4"
+        app:srcCompat="@drawable/ic_baseline_account_box_24"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/carticon"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
+        app:layout_constraintStart_toEndOf="@+id/usericon"
+        app:layout_constraintTop_toTopOf="@+id/toolbar4"
+        app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+    <ImageView
+        android:id="@+id/menuicon"
+        android:layout_width="31dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar4"
+        app:layout_constraintStart_toEndOf="@+id/carticon"
+        app:layout_constraintTop_toTopOf="@+id/toolbar4"
+        app:srcCompat="@drawable/ic_baseline_dehaze_24"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/et_bookname_offer"
+        android:layout_width="336dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:hint="@string/offer_bookname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseimage_btn_offers" />
+
+    <EditText
+        android:id="@+id/offer_isbn"
+        android:layout_width="334dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/offer_code"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_bookname_offer"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/et_offerprice"
+        android:layout_width="334dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/offerprice"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offer_isbn" />
+
+    <EditText
+        android:id="@+id/et_offerdescript"
+        android:layout_width="335dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/offer_descript"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_offerprice"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/save_offer_btn"
+        android:layout_width="154dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="Add Item"
+        android:textStyle="bold"
+        app:backgroundTint="@color/theme_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_offerdescript" />
+
+    <ImageButton
+        android:id="@+id/chooseimage_btn_offers"
+        android:layout_width="108dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addoffers_heading"
+        app:srcCompat="@drawable/ic_baseline_cloud_upload_24"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/offer_imageV"
+        android:layout_width="147dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/image"
+        app:layout_constraintBottom_toTopOf="@+id/et_bookname_offer"
+        app:layout_constraintEnd_toStartOf="@+id/chooseimage_btn_offers"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addoffers_heading"
+        android:contentDescription="TODO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
