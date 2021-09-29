@@ -56,4 +56,87 @@
     <string name="isbn_offer_tv">1234</string>
     <string name="booktitle_offer_tv">Oliver Twist</string>
     <string name="offer_price_tv">RS.500</string>
+
+
+
+    <string name="tv_delivery">Delivery Address</string>
+    <string name="tv_d_message">Please make sure the delivery address is correct</string>
+    <string name="et_dno">Please Enter NIC number</string>
+    <string name="et_building_name">Business or Building Name</string>
+    <string name="et_street">Street</string>
+    <string name="et_district">District</string>
+    <string name="btn_d_continue">Continue</string>
+    <string name="btn_d_show">Show</string>
+    <string name="btn_d_update">Update</string>
+    <string name="tv_pay">Payment</string>
+    <string name="tv_subtotal">Sub Total</string>
+    <string name="tv_subtotal2">Postage Fee</string>
+    <string name="tv_total3">Total</string>
+    <string name="tv_p_method">Choose Payment Method</string>
+    <string name="et_display_subtotal">0.00</string>
+    <string name="et_display_postage">0.00</string>
+    <string name="et_display_payment_Tot">0.00</string>
+    <string name="tv_bank">Bank Deposit</string>
+    <string name="et_bank_name">Your name</string>
+    <string name="et_bank_phone">Phone number</string>
+    <string name="tv_bank_slip">Upload Slip*</string>
+    <string name="btn_deposit_cancel">Cancel</string>
+    <string name="btn_deposit_pay">Confirm</string>
+    <string name="tv_card_details">Card Details</string>
+    <string name="tv_card_type">Card Type *</string>
+    <string name="et_card_no">Card Number</string>
+    <string name="et_ex_date">Expiration date</string>
+    <string name="tv_card_cvn">CVN*</string>
+    <string name="tv_card_cvn_message">This code is a three or four digit number printed on the back or front of credit card</string>
+    <string name="et_cvn">Enter CVN</string>
+    <string name="btn_card_cancel">Cancel</string>
+    <string name="btn_card_confirm">Confirm</string>
+    <string name="rbtn_card_payment">Card Payment</string>
+    <string name="rbtn_bank_deposit">Bank Deposit</string>
+    <string name="rbtn_visa_card">Visa Card</string>
+    <string name="rbtn_master_card">Mastercard</string>
+    <string name="btn_bank_cam">Take Photo</string>
+    <string name="btn_payment_next">NEXT</string>
+    <string name="btn_d_delete">Delete</string>
+    <string name="btn_d_change">Change</string>
+
+
+    <string-array name="title_story">
+        <item>The beauty of Learning </item>
+        <item>Your Smile is the Sun </item>
+        <item>The Power of Dreams </item>
+        <item>Bonnie Blair on Sportsmanship </item>
+        <item>You Better Than You Do </item>
+        <item>Jim Rohan Encourages Challenges </item>
+        <item>The Ripple Effect </item>
+        <item>Do the Right Thing </item>
+        <item>Getting Things Done </item>
+        <item>The Value of Mistakes </item>
+        <item>Being Uncommon </item>
+        <item>You Have the Power </item>
+        <item>Positively Positive About Positivity </item>
+        <item>Mahatma Gandhi Encourages Change </item>
+        <item>Keeps It Simple </item>
+
+    </string-array>
+
+
+    <string-array name="details_story">
+        <item>Natalie Portman on the beauty of Learning\n\n "I don't love studying.I hate studying.I like learning.Learning is beautiful."-Natalie Portman\n\nMiss Portman loves being a student.How many of you don’t like studying, or get tired of it from time to time?If you can look at learning as a beautiful thing that you are privileged to get, then you might enjoy your education more.</item>
+        <item>Roald Dahl Says Your Smile is the Sun\n\n “If you have good thoughts. They will shine out of your face like sunbeams and you will always look lovely.” –Roald Dahl\n\nIt’s amazing what good thoughts can do to a person. When you think positively, that energy expands from within you.This glow makes you look beautiful, inspires others, and makes you a pleasant person to be around. Your thoughts spread energy; choose happy energy.</item>
+        <item>Albert Einstein on the Power of Dreams\n\n “Never give up on what you really want to do.The person with big dreams is more powerful than one with all the facts. ” –Albert Einstein\n\nIt was a “fact” once that man would never fly in the sky. The Wright brothers had big dreams that went beyond fact in their day and age.If you stay true to what you really want to do, then you will find ways to make it happen. Big dreams work on big magic.</item>
+        <item>Bonnie Blair on Sportsmanship\n\n  “Winning does not always mean being first. Winning means you’re doing better than you’ve done before. ” – Bonnie Blair\n\nThe only competition you should have is with yourself.When you go to bed tonight, look back on the day you had and see if you are proud of the way you showed up in every experience.If you are not, then work on being a better version of yourself tomorrow.</item>
+        <item>A.A. Milne / Christopher Robin Knows You Better Than You Do\n\n“You’re braver than you believe, and stronger than you seem, and smarter than you think.” – A.A. Milne/Christopher Robin\n\nTrust in and know that you have more courage, strength and smarts than you think.It might be hard to see it right now, but your experiences in life will show you that it’s true.Growth does not happen if you stay in one place out of doubt. You can do hard things, you can!</item>
+        <item>Jim Rohan Encourages Challenges\n\n  “Don’t just read the easy stuff. You may be entertained by it, but you will never grow from it.” – Jim Rohan\n\nThe easy stuff is fun and quick, it’s true. However, to expand the mind, you must push it to its limits just as you would a muscle.The hard stuff makes you think; it causes you to re-read over and over again until you understand it. Challenge yourself every so often.</item>
+        <item>Edwin Hubbell Chapin on the Ripple Effect\n\n“Every action in our lives touches on some chord that will vibrate in eternity.” – Edwin Hubbel Chapin\n\nThis is a big topic for a small paragraph. Every choice you make creates a ripple effect that touches the lives of others, sometimes many.The point here is that you stop and think about how you are showing up in the world and what kinds of ripples you are making. Are they positive or negative?</item>
+        <item>Theodore Roosevelt Tells You To Do the Right Thing\n\n“In any moment of decision, the best thing you can do is the right thing. The worst thing you can do is nothing.” – Theodore Roosevelt\n\nMany times bad things happen because no one is willing to do anything about stopping them. You might not even be able to stop something bad from happening by doing the right thing, but that you tried is enough.It could even inspire or comfort another person that you stepped up to do the right thing.</item>
+        <item>Henry Ford on Getting Things Done\n\n“Nothing is particularly hard if you break it down into small jobs.” – Henry Ford\n\nThis advice works with anything in life. Take anything difficult and break it into a few pieces.Then take those pieces and add tasks to them that will help you complete each piece.Check off your progress as you go. Before you know it, your hard thing has been accomplished!</item>
+        <item>Sophia Loren Knows the Value of Mistakes\n\n“Mistakes are part of the dues one pays for a full life.” – Sophia Loren\n\nIf you lived your life never making any mistakes, then how much will you have really learned?Making mistakes is essential to success because instead of just knowing what not to do, the lesson is burned into your brain because you experienced it.Mistakes are valuable.</item>
+        <item>George Washington Carver on Being Uncommon\n\n“When you do the common things in life in an uncommon way, you will command the attention of the world.” – George Washington Carver\n\nCommon things done in common ways are predictable and safe. When you take something common and do it in a completely creative and new way, then others pay attention.Doing so can inspire others to create more fun and flexibility into their lives as well.</item>
+        <item>Jim Rohan Knows You Have the Power\n\n“You cannot change the circumstances, the seasons, or the wind, but you can change yourself. That is something you have.” – Jim Rohan\n\nThere is a lot in life that you will not be able to change for one reason or another.The best way to find peace and confidence in yourself is to not let the outer world affect your inner world so much.You can only change yourself in those circumstances.</item>
+        <item>David Bailey is Positively Positive About Positivity\n\n“A positive attitude can really make dreams come true – it did for me.” – David Bailey\n\nPositivity is not instantaneous magic. Being optimistic and positive is a way of life.This practice brings positive experiences in your life, makes you someone that people want to be around,and can create awesome opportunities that are dream come true worthy.</item>
+        <item>Mahatma Gandhi Encourages Change\n\n“You must be the change you wish to see in the world.” – Mahatma Gandhi\n\nSo how does this actually work? Well, if you want to see more peace and less war in the world, find more peace and less war within yourself, your family, or your community.If you want to see more health in the world, take care of your body, and be healthy yourself.</item>
+        <item>Ralph Waldo Emerson Keeps It Simple\n\n“Be Silly, Be Honest, Be Kind.” – Ralph Waldo Emerson\n\nSo simple, yet so powerful. Being silly allows you to remain joyful and happy with yourself and life.Being honest means that people will trust you,and being kind creates harmonious relationships.These three little behaviors in everyone on the planet would create peace on Earth, don’t you think?</item>
+
+    </string-array>
 </resources>
