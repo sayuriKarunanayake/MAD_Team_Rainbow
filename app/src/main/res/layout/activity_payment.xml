@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    tools:context=".Payment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:background="#F6BBFA"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="69dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_account_box_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="77dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/ic_baseline_shopping_cart_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="46dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_dehaze_24"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="183dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="68dp"
+        android:background="#EEEFF1"
+        android:text="@string/tv_pay"
+        android:textColor="#070707"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_pmethod"
+        android:layout_width="257dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/tv_p_method"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/rbtn_group_payment"
+        android:layout_width="283dp"
+        android:layout_height="163dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pmethod"
+        app:layout_constraintVertical_bias="0.194">
+
+        <RadioButton
+            android:id="@+id/rbtn_card_payment"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="@string/rbtn_card_payment"
+            app:buttonTint="#E91E63" />
+
+        <RadioButton
+            android:id="@+id/rbtn_bank_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:text="@string/rbtn_bank_deposit"
+            app:buttonTint="#E91E63" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_payment_next"
+        android:layout_width="239dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/btn_payment_next"
+        android:textColor="#090909"
+        app:backgroundTint="@color/theme_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbtn_group_payment"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
