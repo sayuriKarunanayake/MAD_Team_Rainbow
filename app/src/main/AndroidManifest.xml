@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProject">
-
+        <activity
+            android:name=".subTotal_page"
+            android:exported="true" />
         <activity
             android:name=".PositiveHome"
             android:exported="true" />
@@ -22,8 +24,6 @@
         <activity
             android:name=".PositiveQuotes"
             android:exported="true" />
-
-
         <activity
             android:name=".MainActivity"
             android:exported="true" />
@@ -42,7 +42,6 @@
         <activity
             android:name=".shopping_cart"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

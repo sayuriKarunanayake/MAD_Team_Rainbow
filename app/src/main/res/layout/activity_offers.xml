@@ -9,54 +9,51 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar7"
-        android:layout_width="413dp"
-        android:layout_height="62dp"
+        android:layout_width="392dp"
+        android:layout_height="47dp"
         android:background="#F6BBFA"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/usericon"
-        android:layout_width="33dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="16dp"
+    <ImageButton
+        android:id="@+id/toolbaruserbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar7"
+        android:background="@color/theme_color"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_baseline_account_box_24" />
+        app:srcCompat="@drawable/ic_baseline_account_box_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-    <ImageView
-        android:id="@+id/carticon"
-        android:layout_width="32dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="232dp"
+    <ImageButton
+        android:id="@+id/toolbarcartbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar7"
-        app:layout_constraintStart_toEndOf="@+id/usericon"
+        android:layout_marginEnd="24dp"
+        android:background="@color/theme_color"
+        app:layout_constraintEnd_toStartOf="@+id/toolbarmenubtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+        app:srcCompat="@drawable/ic_baseline_shopping_cart_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-    <ImageView
-        android:id="@+id/menuicon"
-        android:layout_width="35dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar7"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar7"
-        app:layout_constraintStart_toEndOf="@+id/carticon"
-        app:layout_constraintTop_toTopOf="@+id/toolbar7"
-        app:srcCompat="@drawable/ic_baseline_dehaze_24" />
+    <ImageButton
+        android:id="@+id/toolbarmenubtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/theme_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_dehaze_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/offer_heading"
