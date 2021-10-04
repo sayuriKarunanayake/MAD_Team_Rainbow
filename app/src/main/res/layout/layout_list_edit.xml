@@ -36,7 +36,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/offer_price_text"
+            android:id="@+id/offer_price_textRS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/booktitle_offer_text"
@@ -51,7 +51,7 @@
             android:id="@+id/offer_descript_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/offer_price_text"
+            android:layout_below="@id/offer_price_textRS"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/image1"
             android:text="description about offer"

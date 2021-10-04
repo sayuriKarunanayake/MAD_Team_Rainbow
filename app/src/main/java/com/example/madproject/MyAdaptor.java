@@ -154,7 +154,7 @@ public class MyAdaptor extends FirebaseRecyclerAdapter<Data,MyAdaptor.MyViewHold
 
             isbn_offer_text = itemView.findViewById(R.id.isbn_offer_text);
             booktitle_offer_text = itemView.findViewById(R.id.booktitle_offer_text);
-            offer_price_text = itemView.findViewById(R.id.offer_price_text);
+            offer_price_text = itemView.findViewById(R.id.offer_price_textRS);
             offer_descript_text = itemView.findViewById(R.id.offer_descript_text);
             image1 = itemView.findViewById(R.id.image1);
             editoffers_btn = itemView.findViewById(R.id.editoffers_btn);
