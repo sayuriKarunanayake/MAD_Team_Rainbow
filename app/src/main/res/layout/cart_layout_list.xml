@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="358dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/cartBookTitle"
+                android:layout_width="193dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="117dp"
+                android:text="Tile"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cartBookPrice"
+                android:layout_width="196dp"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="53dp"
+                android:layout_marginEnd="57dp"
+                android:text="Price"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rsCart"
+                android:layout_width="55dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="255dp"
+                android:text="Rs."
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/cartItemDeleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="280dp"
+            app:srcCompat="@drawable/ic_baseline_delete_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
