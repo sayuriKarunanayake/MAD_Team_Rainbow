@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back"
     app:layout_constraintDimensionRatio="@string/contrast_ration"
-    tools:context=".ui.slideshow.MainActivity">
+    tools:context=".MainActivity">
 
 
     <TextView
