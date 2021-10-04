@@ -45,7 +45,6 @@ public class CartAdapter extends FirebaseRecyclerAdapter<ShoppingCart,CartAdapte
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-
                     }
                 });
                 builder.show();
@@ -71,6 +70,8 @@ public class CartAdapter extends FirebaseRecyclerAdapter<ShoppingCart,CartAdapte
             cartBookPrice = itemView.findViewById(R.id.cartBookPrice);
             cartBookTitle = itemView.findViewById(R.id.cartBookTitle);
             cartItemDeleteBtn = itemView.findViewById(R.id.cartItemDeleteBtn);
+
         }
     }
 }
+
