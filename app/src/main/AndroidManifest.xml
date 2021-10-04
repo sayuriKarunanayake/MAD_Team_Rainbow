@@ -25,6 +25,12 @@
             android:name=".PositiveQuotes"
             android:exported="true" />
         <activity
+            android:name=".Payment"
+            android:exported="true" />
+        <activity
+            android:name=".Delivery"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
