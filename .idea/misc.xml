@@ -5,12 +5,16 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/drawable/image.xml" value="0.202734375" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/drawable/side_nav_bar.xml" value="0.202734375" />
-        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_main.xml" value="0.152" />
-        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_offers.xml" value="0.17930327868852458" />
+        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_add_offers.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_edit_offers.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_main.xml" value="0.536" />
+        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_offers.xml" value="0.4" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_positive_home.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_positive_quotes.xml" value="0.2" />
-        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_shopping_cart.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_shopping_cart.xml" value="0.536" />
+        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_sub_total_page.xml" value="0.4" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/cart_layout_list.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/dialog_content.xml" value="0.136" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/layout_list.xml" value="0.176" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/layout_list_edit.xml" value="0.1" />
       </map>

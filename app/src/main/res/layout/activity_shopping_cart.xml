@@ -8,54 +8,51 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
-        android:layout_width="413dp"
-        android:layout_height="0dp"
+        android:layout_width="393dp"
+        android:layout_height="48dp"
         android:background="#F6BBFA"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-    <ImageView
-        android:id="@+id/menuicon"
+    <ImageButton
+        android:id="@+id/toolbarcartbtn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        android:background="@color/theme_color"
+        app:layout_constraintEnd_toStartOf="@+id/toolbarmenubtn4"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_dehaze_24" />
+        app:srcCompat="@drawable/ic_baseline_shopping_cart_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-    <ImageView
-        android:id="@+id/carticon"
+    <ImageButton
+        android:id="@+id/toolbaruserbtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/theme_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_account_box_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/toolbarmenubtn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-        app:layout_constraintEnd_toStartOf="@+id/menuicon"
+        android:layout_marginEnd="28dp"
+        android:background="@color/theme_color"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
-
-    <ImageView
-        android:id="@+id/iconuser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="250dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-        app:layout_constraintEnd_toStartOf="@+id/carticon"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_account_box_24" />
+        app:srcCompat="@drawable/ic_baseline_dehaze_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/cart_heading"
@@ -71,7 +68,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/chechout_btn"
