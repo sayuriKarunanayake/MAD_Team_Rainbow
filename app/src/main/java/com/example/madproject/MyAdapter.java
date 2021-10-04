@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -74,7 +75,6 @@ public class MyAdapter extends FirebaseRecyclerAdapter <Data,MyAdapter.MyViewHol
                         cartObj.setPrice(holder.offer_price_tv.getText().toString().trim());
 
                         dbRefere.child(String.valueOf(maxId + 1)).setValue(cartObj);
-
                     }
                 });
             }
