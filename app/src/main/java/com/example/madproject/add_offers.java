@@ -43,7 +43,7 @@ public class add_offers extends AppCompatActivity {
     Data data;
     DatabaseReference dbref;
 
-    long maxid=0;
+    long maxid = 0;
 
 
     @Override
