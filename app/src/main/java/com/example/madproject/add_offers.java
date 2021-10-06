@@ -34,7 +34,7 @@ public class add_offers extends AppCompatActivity {
 
     ImageButton chooseimage_btn_offers;
     Button save_offer_btn;
-    ImageView offer_imageV;
+    ImageView offer_imageV,toolbarcartbtn4;
     StorageReference imgdb;
     public Uri imageuri;
 
@@ -55,6 +55,7 @@ public class add_offers extends AppCompatActivity {
 
         dbref = FirebaseDatabase.getInstance().getReference().child("Offers");
 
+        toolbarcartbtn4 = findViewById(R.id.toolbarcartbtn4);
         chooseimage_btn_offers = findViewById(R.id.chooseimage_btn_offers);
         save_offer_btn = findViewById(R.id.save_offer_btn);
         offer_imageV = findViewById(R.id.offer_imageV);
@@ -78,6 +79,15 @@ public class add_offers extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Fileuploader();
+            }
+        });
+
+        toolbarcartbtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cart = new Intent(   add_offers.this, shopping_cart.class);
+                cart.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(cart);
             }
         });
     }
