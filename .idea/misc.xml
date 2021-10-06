@@ -6,9 +6,11 @@
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/drawable/image.xml" value="0.202734375" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/drawable/side_nav_bar.xml" value="0.202734375" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_add_offers.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_delivery.xml" value="0.17119565217391305" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_edit_offers.xml" value="0.4" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_main.xml" value="0.536" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_offers.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_payment.xml" value="0.17119565217391305" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_positive_home.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_positive_quotes.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/MADproject/app/src/main/res/layout/activity_shopping_cart.xml" value="0.264" />

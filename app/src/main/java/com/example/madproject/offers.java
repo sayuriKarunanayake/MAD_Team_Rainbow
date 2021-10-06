@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.example.madproject.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -15,12 +18,14 @@ public class offers extends AppCompatActivity {
     RecyclerView recyclerView;
     DatabaseReference dbRef;
     MyAdapter myAdaptor;
+    ImageButton toolbarcartbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_offers);
 
+        toolbarcartbtn = findViewById(R.id.toolbarcartbtn);
         recyclerView = findViewById(R.id.recycler_view);
         dbRef = FirebaseDatabase.getInstance().getReference("Offers");
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -33,6 +38,15 @@ public class offers extends AppCompatActivity {
 
         myAdaptor = new MyAdapter(options);
         recyclerView.setAdapter(myAdaptor);
+
+        toolbarcartbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cart = new Intent(   offers.this, shopping_cart.class);
+                cart.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(cart);
+            }
+        });
     }
     @Override
     protected void onStart() {
