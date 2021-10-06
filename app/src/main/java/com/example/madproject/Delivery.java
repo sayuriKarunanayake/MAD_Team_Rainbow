@@ -21,7 +21,7 @@ public class Delivery extends AppCompatActivity {
 
     //declare the all the UI elements
     EditText etbNo, etbName, etStreet, etDistrict;
-    Button btn_d_continue, btn_d_change;
+    Button btn_d_continue;
 
     //create a reference for the delivery details class
     DeliveryDetails deliveryObj;
@@ -47,23 +47,11 @@ public class Delivery extends AppCompatActivity {
         etDistrict = findViewById(R.id.et_district);
 
         btn_d_continue = findViewById(R.id.btn_d_continue);
-        btn_d_change = findViewById(R.id.btn_d_change);
+
 
 
         //Create an object
         deliveryObj = new DeliveryDetails();
-
-
-
-        btn_d_change.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                Intent a = new Intent(   Delivery.this, Payment.class);
-                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(a);
-            }
-        });
 
       }
 
@@ -73,7 +61,6 @@ public class Delivery extends AppCompatActivity {
         etbName.setText("");
         etStreet.setText("");
         etDistrict.setText("");
-
     }
 
     //Set on click listener to the Continue button and start coding to insert
@@ -109,7 +96,7 @@ public class Delivery extends AppCompatActivity {
 
             //Feedback to the user via Toast message
                   Toast.makeText(getApplicationContext(), "Address saved Successfully", Toast.LENGTH_SHORT).show();
-                   Intent intent = new Intent(getApplicationContext(), Payment.class);
+                   Intent intent = new Intent(getApplicationContext(),ShowAll.class);
 
             intent.putExtra("no",Num);
             intent.putExtra("bName",B_name);
@@ -123,5 +110,11 @@ public class Delivery extends AppCompatActivity {
 
             ClearControls();
         }
+
+
+
     }
+
+
+
 }

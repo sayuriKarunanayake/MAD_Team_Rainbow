@@ -4,31 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Delivery">
-
-
-    <TextView
-        android:id="@+id/tv_delivery"
-        android:layout_width="241dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/tv_delivery"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-    <ImageView
-        android:id="@+id/im_postbox"
-        android:layout_width="137dp"
-        android:layout_height="119dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etm_message_address"
-        app:srcCompat="@drawable/box" />
+    tools:context=".ShowAll">
 
 
     <EditText
@@ -37,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:hint="@string/et_dno"
@@ -45,23 +21,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/im_postbox"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         tools:ignore="MissingConstraints" />
-
 
     <EditText
 
         android:id="@+id/et_building_name"
         android:layout_width="361dp"
         android:layout_height="48dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/et_building_name"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_dno" />
-
 
     <EditText
 
@@ -69,7 +43,7 @@
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:hint="@string/et_street"
@@ -79,45 +53,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_building_name" />
 
-
     <EditText
 
         android:id="@+id/et_district"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:hint="@string/et_district"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_street" />
 
 
-    <Button
-        android:id="@+id/btn_d_continue"
-        android:layout_width="175dp"
-        android:layout_height="61dp"
-        android:background="#E91E63"
-        android:backgroundTint="#F6BBFA"
-        android:onClick="CreateAddress"
-        android:text="@string/btn_d_continue"
-        android:textColor="#0C0C0C"
-        app:backgroundTint="#F6BBFA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_district"
-        app:layout_constraintVertical_bias="0.393" />
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="57dp"
+        android:layout_width="410dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
         android:background="#F6BBFA"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -126,13 +83,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="69dp"
         android:layout_height="49dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_account_box_24"
@@ -170,22 +126,60 @@
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
-    <EditText
-        android:id="@+id/etm_message_address"
-        android:layout_width="279dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="2dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="@string/tv_d_message"
-        android:textColor="#9C27B0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+    <Button
+        android:id="@+id/btn_d_update"
+        android:layout_width="119dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:onClick="UpdateAddress"
+        android:text="@string/btn_d_update"
+        android:textColor="#0E0E0E"
+        app:backgroundTint="#F6BBFA"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_delivery" />
+        app:layout_constraintTop_toBottomOf="@+id/et_district" />
+
+    <Button
+        android:id="@+id/btn_d_delete"
+        android:layout_width="119dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="DeleteAddress"
+        android:text="@string/btn_d_delete"
+        android:textColor="#121111"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_d_update"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_d_show"
+        android:layout_width="119dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:onClick="ShowAddress"
+        android:text="@string/btn_d_show"
+        android:textColor="#191717"
+        app:backgroundTint="#F6BBFA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_d_update" />
+
+    <Button
+        android:id="@+id/btn_paynow"
+        android:layout_width="282dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:text="Pay Now"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#070707"
+        app:backgroundTint="#F6BBFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_d_show"
+        app:layout_constraintVertical_bias="0.142" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

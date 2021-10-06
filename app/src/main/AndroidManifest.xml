@@ -30,6 +30,20 @@
         <activity
             android:name=".Delivery"
             android:exported="true" />
+
+        <activity
+            android:name=".CardPayment"
+            android:exported="true" />
+        <activity
+            android:name=".BankDeposit"
+            android:exported="true" />
+
+        <activity
+            android:name=".SideBar"
+            android:exported="true" />
+        <activity
+            android:name=".ShowAll"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

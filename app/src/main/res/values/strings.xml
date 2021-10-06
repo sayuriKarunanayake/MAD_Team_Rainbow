@@ -98,6 +98,9 @@
     <string name="btn_payment_next">NEXT</string>
     <string name="btn_d_delete">Delete</string>
     <string name="btn_d_change">Change</string>
+    <string name="btn_card_show">Home</string>
+    <string name="et_card_nic">"Enter Nic "</string>
+    <string name="btn_sidebar_Freestory" > Free Positve Story </string>
 
 
     <string-array name="title_story">

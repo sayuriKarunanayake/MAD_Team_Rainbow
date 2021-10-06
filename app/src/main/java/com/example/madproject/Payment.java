@@ -34,7 +34,7 @@ public class Payment extends AppCompatActivity {
             public void onClick(View view) {
 
                 Context context;
-               /* if(rButton_card_payment.isChecked()) {
+                if(rButton_card_payment.isChecked()) {
                     Intent intent= new Intent(   Payment.this, CardPayment.class);
                     startActivity(intent);
                 }else if(rButton_bank_deposit.isChecked()){
@@ -42,7 +42,7 @@ public class Payment extends AppCompatActivity {
                     startActivity(intent);
                 }
 
-              */
+
             }
         });
     }
