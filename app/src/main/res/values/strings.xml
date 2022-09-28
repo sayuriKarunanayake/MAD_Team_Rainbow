@@ -102,6 +102,7 @@
     <string name="et_card_nic">"Enter Nic "</string>
     <string name="btn_sidebar_Freestory" > Free Positve Story </string>
 
+        
     <string name="edit_text">edit text</string>
     <string name="password">password</string>
     <string name="signin" />
@@ -122,6 +123,12 @@
     <string name="phone">phone number</string>
     <string name="update">update book details</string>
     <string name="delete">delete request</string>
+    <string name="view">view list</string>
+    <string name="img">mainrainbow</string>
+    <string name="signIn">sign in</string>
+    <string name="CreateData">CreateData</string>
+    <string name="CreateRequest">CreateRequest</string>
+    <string name="RegisterUser">registerUser</string>
 
     <string-array name="title_story">
         <item>The beauty of Learning </item>
