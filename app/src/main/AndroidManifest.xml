@@ -41,6 +41,25 @@
         <activity
             android:name=".SideBar"
             android:exported="true" />
+         
+        <activity
+            android:name=".viewFeedbacks"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity4_requests"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2_feedback"
+            android:exported="true" />
+         <activity
+            android:name=".MainActivity3_req_book"
+            android:exported="true" />
+         <activity
+            android:name=".act2_signup"
+            android:exported="true" />
+          <activity
+            android:name=".MainActivity_login"
+            android:exported="true" />
         <activity
             android:name=".ShowAll"
             android:exported="true" />

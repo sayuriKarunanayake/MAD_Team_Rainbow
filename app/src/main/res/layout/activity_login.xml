@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="500sp"
+        android:layout_height="320sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="32sp"
+        android:contentDescription="@null"
+        android:src="@drawable/image1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="350sp"
+        android:layout_height="45sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:autofillHints="Username"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:text="Username"
+        android:textColor="#e692f8"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350sp"
+        android:layout_height="45sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="7sp"
+        android:layout_marginRight="20sp"
+        android:autofillHints="Password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:textColor="#e692f8"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        tools:text="password" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="350sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="30sp"
+        android:background="@color/e692f8"
+        android:hint="@string/signin"
+        android:text='Log in'
+        android:textColor="#fff"
+        android:textSize="16sp"
+
+
+        android:textStyle="bold"
+        app:backgroundTint="@color/e692f8"
+        app:iconTint="@color/e692f8"
+        app:rippleColor="@color/e692f8"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="350sp"
+        android:layout_height="45sp"
+        android:layout_marginStart="50sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginEnd="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="5sp"
+        android:hint="@string/account"
+        android:text="Don't have an account? Sign up"
+        android:textColor="#e692f8"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationX="5sp"
+        android:translationY="10sp"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>
